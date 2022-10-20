@@ -172,3 +172,69 @@ body {
     padding: 8px;
     border-radius: 5px;
 }
+
+/* Tarayıcı genişliği 632 pikselin altında ise bu kodlar çalışır. */
+@media (max-width: 632px){
+    .main-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-nav{
+        margin-top: 20px;
+    }
+
+    /* .main-nav-items{
+        flex-direction: column;
+    } */
+}
+
+@media (max-width: 790px){
+    #showcase .content h1{
+        font-size: 35px;
+    }
+    #showcase .content h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    #showcase .content{
+        padding: 20px;
+    }
+
+    #showcase .content h1{
+        font-size: 20px;
+    }
+    #showcase .content h2{
+        font-size: 15px;
+        
+    }
+}
+@media (max-width: 860px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-3{
+        width: 80%!important;
+        margin-bottom: 30px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .features-left{
+        height: 200px;
+        width: 90%!important;
+    }
+
+
+    .features-right{
+        width: 90%!important;
+    }
+
+    .recommended-plan{
+        order: -1;
+    }
+
+}
